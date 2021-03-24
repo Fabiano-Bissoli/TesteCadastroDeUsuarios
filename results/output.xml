@@ -1,0 +1,2239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.9.0 on win32)" generated="20210324 20:22:00.726" rpa="false">
+<suite id="s1" name="CasosDeTesteCadastroDeUsuariosBDD" source="C:\Users\User\Desktop\Teste Stefanini\TesteCadastroDeUsuarios\tests\CasosDeTesteCadastroDeUsuariosBDD.robot">
+<test id="s1-t1" name="Cenário 01: Acessar tela de Cadastro de usuários">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:01.143" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210324 20:22:01.143" endtime="20210324 20:22:02.735"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210324 20:22:02.736" endtime="20210324 20:22:02.884"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:01.142" endtime="20210324 20:22:02.885"></status>
+</kw>
+<kw name="Dado que estou na tela de Cadastros de usuários" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Que estou na tela de Cadastros de usuários" library="TelaCadastroDeUsuarios">
+<kw name="Acessar tela de Cadastros de usuários" library="Resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:05.889" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:22:02.889" endtime="20210324 20:22:05.889"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:05.890" level="INFO">Opening url 'http://prova.stefanini-jgr.com.br/teste/qa/'</msg>
+<status status="PASS" starttime="20210324 20:22:05.889" endtime="20210324 20:22:07.115"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_01_Tela_Cadastro_de_usuários_01.png</arg>
+</arguments>
+<msg timestamp="20210324 20:22:07.627" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png"&gt;&lt;img src="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:22:07.115" endtime="20210324 20:22:07.627"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:02.888" endtime="20210324 20:22:07.628"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:02.887" endtime="20210324 20:22:07.628"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:02.887" endtime="20210324 20:22:07.628"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:02.886" endtime="20210324 20:22:07.628"></status>
+</kw>
+<kw name="Quando navego na tela" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Navego na tela" library="TelaCadastroDeUsuarios">
+<kw name="Verificar tela de Cadastro de usuários" library="Resource">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${TITULO_HOME}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:07.728" level="INFO">Element 'xpath=//*[@id="root"]/div/div/div[1]/h1' is displayed.</msg>
+<status status="PASS" starttime="20210324 20:22:07.632" endtime="20210324 20:22:07.729"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${TITULO_HOME}</arg>
+<arg>@{TEXT_TITULO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:07.729" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[1]/h1' contains exact text 'Cadastro de usuários'.</msg>
+<status status="PASS" starttime="20210324 20:22:07.729" endtime="20210324 20:22:07.759"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:10.761" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:22:07.760" endtime="20210324 20:22:10.761"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:07.632" endtime="20210324 20:22:10.761"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:07.631" endtime="20210324 20:22:10.761"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:07.630" endtime="20210324 20:22:10.761"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:07.629" endtime="20210324 20:22:10.762"></status>
+</kw>
+<kw name="Então exibe a tabela Formulário com os campos Nome, E-mail, Senha e o botão Cadastrar" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Exibe a tabela Formulário com os campos Nome, E-mail, Senha e o botão Cadastrar" library="TelaCadastroDeUsuarios">
+<kw name="Verificar campos da tela de Cadastro de usuários" library="Resource">
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${TAB_FORMULARIO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:10.807" level="INFO">Element 'xpath=//*[@id="root"]/div/div/div[2]/h2' is displayed.</msg>
+<status status="PASS" starttime="20210324 20:22:10.765" endtime="20210324 20:22:10.807"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${TAB_FORMULARIO}</arg>
+<arg>@{TEXT_FORMULARIO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:10.808" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/h2' contains exact text 'Formulário'.</msg>
+<status status="PASS" starttime="20210324 20:22:10.807" endtime="20210324 20:22:10.837"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:10.866" level="INFO">Element 'xpath=//*[@id="name"]' is displayed.</msg>
+<status status="PASS" starttime="20210324 20:22:10.838" endtime="20210324 20:22:10.867"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${TITULO_C_NOME}</arg>
+<arg>@{TEXT_NOME}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:10.867" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[1]/label' contains exact text 'Nome'.</msg>
+<status status="PASS" starttime="20210324 20:22:10.867" endtime="20210324 20:22:10.903"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:10.936" level="INFO">Element 'xpath=//*[@id="email"]' is displayed.</msg>
+<status status="PASS" starttime="20210324 20:22:10.903" endtime="20210324 20:22:10.936"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${TITULO_C_E-MAIL}</arg>
+<arg>@{TEXT_E-MAIL}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:10.938" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[2]/label' contains exact text 'E-mail'.</msg>
+<status status="PASS" starttime="20210324 20:22:10.937" endtime="20210324 20:22:11.022"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:11.057" level="INFO">Element 'xpath=//*[@id="password"]' is displayed.</msg>
+<status status="PASS" starttime="20210324 20:22:11.023" endtime="20210324 20:22:11.057"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${TITULO_C_SENHA}</arg>
+<arg>@{TEXT_SENHA}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:11.058" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[3]/label' contains exact text 'Senha'.</msg>
+<status status="PASS" starttime="20210324 20:22:11.057" endtime="20210324 20:22:11.094"></status>
+</kw>
+<kw name="Element Should Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:11.124" level="INFO">Element 'xpath=//*[@id="register"]' is displayed.</msg>
+<status status="PASS" starttime="20210324 20:22:11.094" endtime="20210324 20:22:11.125"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+<arg>@{TEXT_BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:11.126" level="INFO">Verifying element 'xpath=//*[@id="register"]' contains exact text 'Cadastrar'.</msg>
+<status status="PASS" starttime="20210324 20:22:11.125" endtime="20210324 20:22:11.155"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:10.764" endtime="20210324 20:22:11.155"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:10.764" endtime="20210324 20:22:11.155"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:10.763" endtime="20210324 20:22:11.155"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:10.762" endtime="20210324 20:22:11.156"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210324 20:22:11.158" endtime="20210324 20:22:13.560"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:11.157" endtime="20210324 20:22:13.560"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:01.141" endtime="20210324 20:22:13.561" critical="yes"></status>
+</test>
+<test id="s1-t2" name="Cenário 02: Cadastrar usuário com o campo Nome vazio">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:13.565" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210324 20:22:13.564" endtime="20210324 20:22:14.996"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210324 20:22:14.997" endtime="20210324 20:22:15.119"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:13.564" endtime="20210324 20:22:15.119"></status>
+</kw>
+<kw name="Dado que cadastrarei um usuário sem preencher o campo Nome" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Que cadastrarei um usuário sem preencher o campo Nome" library="CadastrarUsuarioNomeVazio">
+<kw name="Acessar tela de Cadastros de usuários" library="Resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:18.124" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:22:15.123" endtime="20210324 20:22:18.124"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:18.126" level="INFO">Opening url 'http://prova.stefanini-jgr.com.br/teste/qa/'</msg>
+<status status="PASS" starttime="20210324 20:22:18.124" endtime="20210324 20:22:19.351"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_01_Tela_Cadastro_de_usuários_01.png</arg>
+</arguments>
+<msg timestamp="20210324 20:22:19.815" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png"&gt;&lt;img src="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:22:19.352" endtime="20210324 20:22:19.815"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:15.123" endtime="20210324 20:22:19.816"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:15.122" endtime="20210324 20:22:19.816"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:15.121" endtime="20210324 20:22:19.816"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:15.121" endtime="20210324 20:22:19.816"></status>
+</kw>
+<kw name="Quando limpo o campo Nome deixando vazio" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Limpo o campo Nome deixando vazio" library="CadastrarUsuarioNomeVazio">
+<kw name="Limpar campo Nome" library="Resource">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+</arguments>
+<status status="PASS" starttime="20210324 20:22:19.820" endtime="20210324 20:22:19.892"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:19.819" endtime="20210324 20:22:19.892"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:19.819" endtime="20210324 20:22:19.893"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:19.818" endtime="20210324 20:22:19.893"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:19.817" endtime="20210324 20:22:19.893"></status>
+</kw>
+<kw name="E preencho os campos E-mail e Senha" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho os campos E-mail e Senha" library="CadastrarUsuarioNomeVazio">
+<kw name="Preencher os campos E-mail e Senha" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+<arg>@{E-MAIL_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:19.896" level="INFO">Typing text 'fabiano.bissoli@email.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:19.896" endtime="20210324 20:22:20.096"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+<arg>@{SENHA_COMPLETA}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:20.098" level="INFO">Typing text '12345678' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:20.097" endtime="20210324 20:22:20.232"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:19.895" endtime="20210324 20:22:20.232"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:19.895" endtime="20210324 20:22:20.232"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:19.894" endtime="20210324 20:22:20.232"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:19.894" endtime="20210324 20:22:20.233"></status>
+</kw>
+<kw name="E clico no botão Cadastrar com o campo Nome vazio" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar com o campo Nome vazio" library="CadastrarUsuarioNomeVazio">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:20.237" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:20.237" endtime="20210324 20:22:20.317"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:20.236" endtime="20210324 20:22:20.317"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:20.235" endtime="20210324 20:22:20.318"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:20.235" endtime="20210324 20:22:20.318"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:20.234" endtime="20210324 20:22:20.318"></status>
+</kw>
+<kw name="Então exibi a mensagem de erro &quot;O campo Nome é obrigatório.&quot;, logo abaixo do campo Nome e não ter cadastrado o usuário" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Exibi a mensagem de erro &quot;O campo Nome é obrigatório.&quot;, logo abaixo do campo Nome e não ter cadastrado o usuário" library="CadastrarUsuarioNomeVazio">
+<kw name="Mensagem de erro abaixo do campo Nome" library="Resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${MENSAGEM_ERRO_NOME}</arg>
+<arg>@{TEXT_ERRO_NOME}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:20.323" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[1]/p' contains exact text 'O campo Nome é obrigatório.'.</msg>
+<status status="PASS" starttime="20210324 20:22:20.323" endtime="20210324 20:22:20.361"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_02_Mensagem_de_Erro_Nome_02.png</arg>
+</arguments>
+<msg timestamp="20210324 20:22:20.820" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_02_Mensagem_de_Erro_Nome_02.png"&gt;&lt;img src="CT_02_Mensagem_de_Erro_Nome_02.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:22:20.361" endtime="20210324 20:22:20.820"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:20.322" endtime="20210324 20:22:20.820"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:20.321" endtime="20210324 20:22:20.820"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:20.321" endtime="20210324 20:22:20.820"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:20.320" endtime="20210324 20:22:20.821"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210324 20:22:20.823" endtime="20210324 20:22:23.177"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:20.822" endtime="20210324 20:22:23.177"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:13.563" endtime="20210324 20:22:23.178" critical="yes"></status>
+</test>
+<test id="s1-t3" name="Cenário 03: Cadastrar usuário com o campo E-mail vazio">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:23.182" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210324 20:22:23.181" endtime="20210324 20:22:24.668"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210324 20:22:24.669" endtime="20210324 20:22:24.791"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:23.181" endtime="20210324 20:22:24.792"></status>
+</kw>
+<kw name="Dado que cadastrarei um usuário sem preencher o campo E-mail" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Que cadastrarei um usuário sem preencher o campo E-mail" library="CadastrarUsuarioE-mailVazio">
+<kw name="Acessar tela de Cadastros de usuários" library="Resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:27.797" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:22:24.795" endtime="20210324 20:22:27.797"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:27.798" level="INFO">Opening url 'http://prova.stefanini-jgr.com.br/teste/qa/'</msg>
+<status status="PASS" starttime="20210324 20:22:27.798" endtime="20210324 20:22:29.037"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_01_Tela_Cadastro_de_usuários_01.png</arg>
+</arguments>
+<msg timestamp="20210324 20:22:29.498" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png"&gt;&lt;img src="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:22:29.037" endtime="20210324 20:22:29.498"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:24.795" endtime="20210324 20:22:29.498"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:24.794" endtime="20210324 20:22:29.498"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:24.793" endtime="20210324 20:22:29.498"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:24.793" endtime="20210324 20:22:29.498"></status>
+</kw>
+<kw name="Quando limpo o campo E-mail deixando vazio" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Limpo o campo E-mail deixando vazio" library="CadastrarUsuarioE-mailVazio">
+<kw name="Limpar campo E-mail" library="Resource">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+</arguments>
+<status status="PASS" starttime="20210324 20:22:29.501" endtime="20210324 20:22:29.566"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.501" endtime="20210324 20:22:29.566"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.500" endtime="20210324 20:22:29.566"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.500" endtime="20210324 20:22:29.566"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.499" endtime="20210324 20:22:29.567"></status>
+</kw>
+<kw name="E preencho os campos Nome e Senha" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho os campos Nome e Senha" library="CadastrarUsuarioE-mailVazio">
+<kw name="Preencher os campos Nome e Senha" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+<arg>@{USER_UM_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:29.571" level="INFO">Typing text 'Fabiano Bernardo Bissoli' into text field 'xpath=//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:29.570" endtime="20210324 20:22:29.754"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+<arg>@{SENHA_COMPLETA}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:29.755" level="INFO">Typing text '12345678' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:29.755" endtime="20210324 20:22:29.895"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.570" endtime="20210324 20:22:29.895"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.569" endtime="20210324 20:22:29.895"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.569" endtime="20210324 20:22:29.895"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.567" endtime="20210324 20:22:29.896"></status>
+</kw>
+<kw name="E clico no botão Cadastrar com o campo E-mail vazio" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar com o campo E-mail vazio" library="CadastrarUsuarioE-mailVazio">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:29.900" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:29.900" endtime="20210324 20:22:29.985"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.899" endtime="20210324 20:22:29.985"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.898" endtime="20210324 20:22:29.986"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.898" endtime="20210324 20:22:29.986"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.897" endtime="20210324 20:22:29.986"></status>
+</kw>
+<kw name="Então exibi a mensagem de erro &quot;O campo E-mail é obrigatório.&quot;, logo abaixo do campo E-mail e não ter cadastrado o usuário" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Exibi a mensagem de erro &quot;O campo E-mail é obrigatório.&quot;, logo abaixo do campo E-mail e não ter cadastrado o usuário" library="CadastrarUsuarioE-mailVazio">
+<kw name="Mensagem de erro abaixo do campo E-mail" library="Resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${MENSAGEM_ERRO_E-MAIL}</arg>
+<arg>@{TEXT_ERRO_E-MAIL}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:29.990" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[2]/p' contains exact text 'O campo E-mail é obrigatório.'.</msg>
+<status status="PASS" starttime="20210324 20:22:29.989" endtime="20210324 20:22:30.029"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_03_Mensagem_de_Erro_E-mail_03.png</arg>
+</arguments>
+<msg timestamp="20210324 20:22:30.500" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_03_Mensagem_de_Erro_E-mail_03.png"&gt;&lt;img src="CT_03_Mensagem_de_Erro_E-mail_03.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:22:30.029" endtime="20210324 20:22:30.501"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.989" endtime="20210324 20:22:30.501"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.988" endtime="20210324 20:22:30.501"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.987" endtime="20210324 20:22:30.501"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:29.987" endtime="20210324 20:22:30.502"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210324 20:22:30.504" endtime="20210324 20:22:32.888"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:30.503" endtime="20210324 20:22:32.888"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:23.180" endtime="20210324 20:22:32.889" critical="yes"></status>
+</test>
+<test id="s1-t4" name="Cenário 04: Cadastrar usuário com o campo Senha vazio">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:32.895" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210324 20:22:32.894" endtime="20210324 20:22:34.325"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210324 20:22:34.326" endtime="20210324 20:22:34.445"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:32.893" endtime="20210324 20:22:34.446"></status>
+</kw>
+<kw name="Dado que cadastrarei um usuário sem preencher o campo Senha" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Que cadastrarei um usuário sem preencher o campo Senha" library="CadastrarUsuarioSenhaVazio">
+<kw name="Acessar tela de Cadastros de usuários" library="Resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:37.451" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:22:34.449" endtime="20210324 20:22:37.451"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:37.452" level="INFO">Opening url 'http://prova.stefanini-jgr.com.br/teste/qa/'</msg>
+<status status="PASS" starttime="20210324 20:22:37.451" endtime="20210324 20:22:38.732"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_01_Tela_Cadastro_de_usuários_01.png</arg>
+</arguments>
+<msg timestamp="20210324 20:22:39.193" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png"&gt;&lt;img src="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:22:38.733" endtime="20210324 20:22:39.193"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:34.449" endtime="20210324 20:22:39.193"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:34.448" endtime="20210324 20:22:39.194"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:34.448" endtime="20210324 20:22:39.194"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:34.447" endtime="20210324 20:22:39.194"></status>
+</kw>
+<kw name="Quando limpo o campo Senha deixando vazio" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Limpo o campo Senha deixando vazio" library="CadastrarUsuarioSenhaVazio">
+<kw name="Limpar campo Senha" library="Resource">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+</arguments>
+<status status="PASS" starttime="20210324 20:22:39.197" endtime="20210324 20:22:39.266"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.196" endtime="20210324 20:22:39.266"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.196" endtime="20210324 20:22:39.266"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.195" endtime="20210324 20:22:39.267"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.195" endtime="20210324 20:22:39.267"></status>
+</kw>
+<kw name="E preencho os campos Nome e E-mail" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho os campos Nome e E-mail" library="CadastrarUsuarioSenhaVazio">
+<kw name="Preencher os campos Nome e E-mail" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+<arg>@{USER_UM_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:39.271" level="INFO">Typing text 'Fabiano Bernardo Bissoli' into text field 'xpath=//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:39.270" endtime="20210324 20:22:39.454"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+<arg>@{E-MAIL_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:39.455" level="INFO">Typing text 'fabiano.bissoli@email.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:39.455" endtime="20210324 20:22:39.640"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.270" endtime="20210324 20:22:39.641"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.269" endtime="20210324 20:22:39.641"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.269" endtime="20210324 20:22:39.641"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.268" endtime="20210324 20:22:39.641"></status>
+</kw>
+<kw name="E clico no botão Cadastrar com o campo Senha vazio" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar com o campo Senha vazio" library="CadastrarUsuarioSenhaVazio">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:39.644" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:39.644" endtime="20210324 20:22:39.726"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.644" endtime="20210324 20:22:39.726"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.643" endtime="20210324 20:22:39.727"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.643" endtime="20210324 20:22:39.727"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.642" endtime="20210324 20:22:39.727"></status>
+</kw>
+<kw name="Então exibi a mensagem de erro &quot;O campo Senha é obrigatório.&quot;, logo abaixo do campo Senha e não ter cadastrado o usuário" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Exibi a mensagem de erro &quot;O campo Senha é obrigatório.&quot;, logo abaixo do campo Senha e não ter cadastrado o usuário" library="CadastrarUsuarioSenhaVazio">
+<kw name="Mensagem de erro abaixo do campo Senha" library="Resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${MENSAGEM_ERRO_SENHA}</arg>
+<arg>@{TEXT_ERRO_SENHA}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:39.731" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[3]/p' contains exact text 'O campo Senha é obrigatório.'.</msg>
+<status status="PASS" starttime="20210324 20:22:39.731" endtime="20210324 20:22:39.767"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_04_Mensagem_de_Erro_Senha_04.png</arg>
+</arguments>
+<msg timestamp="20210324 20:22:40.209" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_04_Mensagem_de_Erro_Senha_04.png"&gt;&lt;img src="CT_04_Mensagem_de_Erro_Senha_04.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:22:39.767" endtime="20210324 20:22:40.209"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.730" endtime="20210324 20:22:40.209"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.730" endtime="20210324 20:22:40.209"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.729" endtime="20210324 20:22:40.210"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:39.728" endtime="20210324 20:22:40.210"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210324 20:22:40.212" endtime="20210324 20:22:42.607"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:40.211" endtime="20210324 20:22:42.607"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:32.891" endtime="20210324 20:22:42.608" critical="yes"></status>
+</test>
+<test id="s1-t5" name="Cenário 05: Cadastrar usuário com todos campos vazio">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:42.613" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210324 20:22:42.613" endtime="20210324 20:22:44.074"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210324 20:22:44.074" endtime="20210324 20:22:44.194"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:42.612" endtime="20210324 20:22:44.195"></status>
+</kw>
+<kw name="Dado que cadastrarei um usuário sem preencher os campos Nome, E-mail e Senha" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Que cadastrarei um usuário sem preencher os campos Nome, E-mail e Senha" library="CadastrarUsuarioTodosCamposVazios">
+<kw name="Acessar tela de Cadastros de usuários" library="Resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:47.201" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:22:44.199" endtime="20210324 20:22:47.201"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:47.202" level="INFO">Opening url 'http://prova.stefanini-jgr.com.br/teste/qa/'</msg>
+<status status="PASS" starttime="20210324 20:22:47.201" endtime="20210324 20:22:48.550"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_01_Tela_Cadastro_de_usuários_01.png</arg>
+</arguments>
+<msg timestamp="20210324 20:22:49.029" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png"&gt;&lt;img src="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:22:48.551" endtime="20210324 20:22:49.029"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:44.198" endtime="20210324 20:22:49.029"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:44.197" endtime="20210324 20:22:49.029"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:44.197" endtime="20210324 20:22:49.029"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:44.196" endtime="20210324 20:22:49.030"></status>
+</kw>
+<kw name="Quando limpo os campos Nome, E-mail e Senha deixando todos vazios" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Limpo os campos Nome, E-mail e Senha deixando todos vazios" library="CadastrarUsuarioTodosCamposVazios">
+<kw name="Limpar campos Nome,E-mail e Senha" library="Resource">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+</arguments>
+<status status="PASS" starttime="20210324 20:22:49.033" endtime="20210324 20:22:49.114"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+</arguments>
+<status status="PASS" starttime="20210324 20:22:49.114" endtime="20210324 20:22:49.186"></status>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+</arguments>
+<status status="PASS" starttime="20210324 20:22:49.187" endtime="20210324 20:22:49.269"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.032" endtime="20210324 20:22:49.269"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.032" endtime="20210324 20:22:49.269"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.031" endtime="20210324 20:22:49.269"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.030" endtime="20210324 20:22:49.270"></status>
+</kw>
+<kw name="E clico no botão Cadastrar com os campos Nome, E-mail e Senha vazios" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar com os campos Nome, E-mail e Senha vazios" library="CadastrarUsuarioTodosCamposVazios">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:49.274" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:49.273" endtime="20210324 20:22:49.377"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.272" endtime="20210324 20:22:49.377"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.272" endtime="20210324 20:22:49.377"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.271" endtime="20210324 20:22:49.377"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.270" endtime="20210324 20:22:49.377"></status>
+</kw>
+<kw name="Então exibi mensagens de erro logo abaixo dos campos Nome, E-mail e Senha" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Exibi mensagens de erro logo abaixo dos campos Nome, E-mail e Senha" library="CadastrarUsuarioTodosCamposVazios">
+<kw name="Mensagens de erro abaixo dos campos Nome, E-mail e Senha" library="Resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${MENSAGEM_ERRO_NOME}</arg>
+<arg>@{TEXT_ERRO_NOME}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:49.382" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[1]/p' contains exact text 'O campo Nome é obrigatório.'.</msg>
+<status status="PASS" starttime="20210324 20:22:49.381" endtime="20210324 20:22:49.431"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${MENSAGEM_ERRO_E-MAIL}</arg>
+<arg>@{TEXT_ERRO_E-MAIL}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:49.432" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[2]/p' contains exact text 'O campo E-mail é obrigatório.'.</msg>
+<status status="PASS" starttime="20210324 20:22:49.432" endtime="20210324 20:22:49.470"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${MENSAGEM_ERRO_SENHA}</arg>
+<arg>@{TEXT_ERRO_SENHA}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:49.471" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[3]/p' contains exact text 'O campo Senha é obrigatório.'.</msg>
+<status status="PASS" starttime="20210324 20:22:49.471" endtime="20210324 20:22:49.512"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_05_Mensagem_de_Erro_Todos_os_Campos_05.png</arg>
+</arguments>
+<msg timestamp="20210324 20:22:49.994" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_05_Mensagem_de_Erro_Todos_os_Campos_05.png"&gt;&lt;img src="CT_05_Mensagem_de_Erro_Todos_os_Campos_05.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:22:49.512" endtime="20210324 20:22:49.995"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.380" endtime="20210324 20:22:49.995"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.380" endtime="20210324 20:22:49.995"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.379" endtime="20210324 20:22:49.995"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.378" endtime="20210324 20:22:49.996"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210324 20:22:49.997" endtime="20210324 20:22:52.447"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:49.997" endtime="20210324 20:22:52.447"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:42.610" endtime="20210324 20:22:52.448" critical="yes"></status>
+</test>
+<test id="s1-t6" name="Cenário 06: Cadastrar usuário com o campo Nome incompleto">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:52.452" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210324 20:22:52.452" endtime="20210324 20:22:53.944"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210324 20:22:53.944" endtime="20210324 20:22:54.064"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:52.451" endtime="20210324 20:22:54.065"></status>
+</kw>
+<kw name="Dado que cadastrarei um usuário com o campo Nome incompleto" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Que cadastrarei um usuário com o campo Nome incompleto" library="CadastrarUsuarioNomeIncompleto">
+<kw name="Acessar tela de Cadastros de usuários" library="Resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:57.071" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:22:54.069" endtime="20210324 20:22:57.071"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:57.072" level="INFO">Opening url 'http://prova.stefanini-jgr.com.br/teste/qa/'</msg>
+<status status="PASS" starttime="20210324 20:22:57.071" endtime="20210324 20:22:58.338"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_01_Tela_Cadastro_de_usuários_01.png</arg>
+</arguments>
+<msg timestamp="20210324 20:22:58.812" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png"&gt;&lt;img src="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:22:58.338" endtime="20210324 20:22:58.812"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:54.068" endtime="20210324 20:22:58.812"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:54.067" endtime="20210324 20:22:58.812"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:54.067" endtime="20210324 20:22:58.813"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:54.066" endtime="20210324 20:22:58.813"></status>
+</kw>
+<kw name="Quando preencho o campo Nome deixando incompleto" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho o campo Nome deixando incompleto" library="CadastrarUsuarioNomeIncompleto">
+<kw name="Preencher campo Nome incompleto" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+<arg>@{NOME_INCOMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:58.816" level="INFO">Typing text 'Fabiano' into text field 'xpath=//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:58.815" endtime="20210324 20:22:58.970"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:58.815" endtime="20210324 20:22:58.971"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:58.815" endtime="20210324 20:22:58.971"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:58.814" endtime="20210324 20:22:58.971"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:58.814" endtime="20210324 20:22:58.972"></status>
+</kw>
+<kw name="E preencho os campos E-mail e Senha completamente" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho os campos E-mail e Senha completamente" library="CadastrarUsuarioNomeIncompleto">
+<kw name="Preencher os campos E-mail e Senha" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+<arg>@{E-MAIL_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:58.977" level="INFO">Typing text 'fabiano.bissoli@email.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:58.976" endtime="20210324 20:22:59.159"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+<arg>@{SENHA_COMPLETA}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:59.159" level="INFO">Typing text '12345678' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:59.159" endtime="20210324 20:22:59.285"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:58.975" endtime="20210324 20:22:59.285"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:58.974" endtime="20210324 20:22:59.285"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:58.974" endtime="20210324 20:22:59.285"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:58.973" endtime="20210324 20:22:59.286"></status>
+</kw>
+<kw name="E clico no botão Cadastrar com o campo Nome incompleto" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar com o campo Nome incompleto" library="CadastrarUsuarioNomeIncompleto">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:59.290" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:22:59.289" endtime="20210324 20:22:59.369"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:59.289" endtime="20210324 20:22:59.369"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:59.288" endtime="20210324 20:22:59.370"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:59.288" endtime="20210324 20:22:59.370"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:59.287" endtime="20210324 20:22:59.370"></status>
+</kw>
+<kw name="Então exibi a mensagem de erro &quot;Por favor, insira um nome completo.&quot;, logo abaixo do campo Nome e não ter cadastrado o usuário" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Exibi a mensagem de erro &quot;Por favor, insira um nome completo.&quot;, logo abaixo do campo Nome e não ter cadastrado o usuário" library="CadastrarUsuarioNomeIncompleto">
+<kw name="Mensagem de nome incompleto abaixo do campo Nome" library="Resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${INCOMPLETO_NOME}</arg>
+<arg>@{TEXT_INCOMPLETO_NOME}</arg>
+</arguments>
+<msg timestamp="20210324 20:22:59.376" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[1]/p' contains exact text 'Por favor, insira um nome completo.'.</msg>
+<status status="PASS" starttime="20210324 20:22:59.375" endtime="20210324 20:22:59.412"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_06_Mensagem_de_Nome_Incompleto_06.png</arg>
+</arguments>
+<msg timestamp="20210324 20:22:59.889" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_06_Mensagem_de_Nome_Incompleto_06.png"&gt;&lt;img src="CT_06_Mensagem_de_Nome_Incompleto_06.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:22:59.412" endtime="20210324 20:22:59.890"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:59.374" endtime="20210324 20:22:59.890"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:59.374" endtime="20210324 20:22:59.890"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:59.373" endtime="20210324 20:22:59.890"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:59.372" endtime="20210324 20:22:59.891"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210324 20:22:59.892" endtime="20210324 20:23:02.296"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:59.892" endtime="20210324 20:23:02.296"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:22:52.450" endtime="20210324 20:23:02.297" critical="yes"></status>
+</test>
+<test id="s1-t7" name="Cenário 07: Cadastrar usuário com o campo E-mail incompleto">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:02.301" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210324 20:23:02.300" endtime="20210324 20:23:03.801"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210324 20:23:03.802" endtime="20210324 20:23:03.928"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:02.300" endtime="20210324 20:23:03.929"></status>
+</kw>
+<kw name="Dado que cadastrarei um usuário com o campo E-mail incompleto" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Que cadastrarei um usuário com o campo E-mail incompleto" library="CadastrarUsuarioE-mailIncompleto">
+<kw name="Acessar tela de Cadastros de usuários" library="Resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:06.934" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:23:03.933" endtime="20210324 20:23:06.934"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:06.935" level="INFO">Opening url 'http://prova.stefanini-jgr.com.br/teste/qa/'</msg>
+<status status="PASS" starttime="20210324 20:23:06.934" endtime="20210324 20:23:08.265"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_01_Tela_Cadastro_de_usuários_01.png</arg>
+</arguments>
+<msg timestamp="20210324 20:23:08.758" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png"&gt;&lt;img src="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:23:08.266" endtime="20210324 20:23:08.758"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:03.932" endtime="20210324 20:23:08.758"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:03.931" endtime="20210324 20:23:08.758"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:03.931" endtime="20210324 20:23:08.758"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:03.930" endtime="20210324 20:23:08.759"></status>
+</kw>
+<kw name="Quando preencho o campo E-mail deixando incompleto" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho o campo E-mail deixando incompleto" library="CadastrarUsuarioE-mailIncompleto">
+<kw name="Preencher campo E-mail incompleto" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+<arg>@{E-MAIL_INCOMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:08.762" level="INFO">Typing text 'fabiano.bissoli.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:08.762" endtime="20210324 20:23:08.945"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:08.761" endtime="20210324 20:23:08.945"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:08.760" endtime="20210324 20:23:08.945"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:08.760" endtime="20210324 20:23:08.945"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:08.759" endtime="20210324 20:23:08.946"></status>
+</kw>
+<kw name="E preencho os campos Nome e Senha completamente" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho os campos Nome e Senha completamente" library="CadastrarUsuarioE-mailIncompleto">
+<kw name="Preencher os campos Nome e Senha" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+<arg>@{USER_UM_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:08.951" level="INFO">Typing text 'Fabiano Bernardo Bissoli' into text field 'xpath=//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:08.950" endtime="20210324 20:23:09.122"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+<arg>@{SENHA_COMPLETA}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:09.123" level="INFO">Typing text '12345678' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:09.122" endtime="20210324 20:23:09.248"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:08.949" endtime="20210324 20:23:09.248"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:08.948" endtime="20210324 20:23:09.249"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:08.947" endtime="20210324 20:23:09.249"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:08.947" endtime="20210324 20:23:09.249"></status>
+</kw>
+<kw name="E clico no botão Cadastrar com o campo E-mail incompleto" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar com o campo E-mail incompleto" library="CadastrarUsuarioE-mailIncompleto">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:09.252" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:09.252" endtime="20210324 20:23:09.334"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:09.251" endtime="20210324 20:23:09.335"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:09.251" endtime="20210324 20:23:09.335"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:09.250" endtime="20210324 20:23:09.335"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:09.250" endtime="20210324 20:23:09.335"></status>
+</kw>
+<kw name="Então exibi a mensagem de erro &quot;Por favor, insira um e-mail válido.&quot;, logo abaixo do campo E-mail e não ter cadastrado o usuário" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Exibi a mensagem de erro &quot;Por favor, insira um e-mail válido.&quot;, logo abaixo do campo E-mail e não ter cadastrado o usuário" library="CadastrarUsuarioE-mailIncompleto">
+<kw name="Mensagem de insira um e-mail válido abaixo do campo E-mail" library="Resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${INCOMPLETO_E-MAIL}</arg>
+<arg>@{TEXT_INCOMPLETO_E-MAIL}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:09.342" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[2]/p' contains exact text 'Por favor, insira um e-mail válido.'.</msg>
+<status status="PASS" starttime="20210324 20:23:09.341" endtime="20210324 20:23:09.384"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_07_Mensagem_de_E-mail_Inválido_07.png</arg>
+</arguments>
+<msg timestamp="20210324 20:23:09.828" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_07_Mensagem_de_E-mail_Inv%C3%A1lido_07.png"&gt;&lt;img src="CT_07_Mensagem_de_E-mail_Inv%C3%A1lido_07.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:23:09.384" endtime="20210324 20:23:09.828"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:09.340" endtime="20210324 20:23:09.828"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:09.339" endtime="20210324 20:23:09.828"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:09.338" endtime="20210324 20:23:09.828"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:09.337" endtime="20210324 20:23:09.829"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210324 20:23:09.831" endtime="20210324 20:23:12.296"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:09.830" endtime="20210324 20:23:12.296"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:02.299" endtime="20210324 20:23:12.297" critical="yes"></status>
+</test>
+<test id="s1-t8" name="Cenário 08: Cadastrar usuário com o campo Senha incompleto">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:12.301" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210324 20:23:12.301" endtime="20210324 20:23:13.809"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210324 20:23:13.809" endtime="20210324 20:23:13.935"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:12.300" endtime="20210324 20:23:13.936"></status>
+</kw>
+<kw name="Dado que cadastrarei um usuário com o campo Senha incompleto" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Que cadastrarei um usuário com o campo Senha incompleto" library="CadastrarUsuarioSenhaIncompleta">
+<kw name="Acessar tela de Cadastros de usuários" library="Resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:16.941" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:23:13.940" endtime="20210324 20:23:16.941"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:16.942" level="INFO">Opening url 'http://prova.stefanini-jgr.com.br/teste/qa/'</msg>
+<status status="PASS" starttime="20210324 20:23:16.941" endtime="20210324 20:23:18.409"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_01_Tela_Cadastro_de_usuários_01.png</arg>
+</arguments>
+<msg timestamp="20210324 20:23:18.961" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png"&gt;&lt;img src="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:23:18.409" endtime="20210324 20:23:18.961"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:13.940" endtime="20210324 20:23:18.962"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:13.939" endtime="20210324 20:23:18.962"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:13.938" endtime="20210324 20:23:18.962"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:13.937" endtime="20210324 20:23:18.962"></status>
+</kw>
+<kw name="Quando preencho o campo Senha deixando incompleto" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho o campo Senha deixando incompleto" library="CadastrarUsuarioSenhaIncompleta">
+<kw name="Preencher campo Senha incompleto" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+<arg>@{SENHA_INCOMPLETA}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:18.965" level="INFO">Typing text '1234567' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:18.965" endtime="20210324 20:23:19.129"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:18.964" endtime="20210324 20:23:19.129"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:18.964" endtime="20210324 20:23:19.129"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:18.964" endtime="20210324 20:23:19.130"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:18.963" endtime="20210324 20:23:19.130"></status>
+</kw>
+<kw name="E preencho os campos Nome e E-mail completamente" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho os campos Nome e E-mail completamente" library="CadastrarUsuarioSenhaIncompleta">
+<kw name="Preencher os campos Nome e E-mail" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+<arg>@{USER_UM_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:19.136" level="INFO">Typing text 'Fabiano Bernardo Bissoli' into text field 'xpath=//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:19.136" endtime="20210324 20:23:19.330"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+<arg>@{E-MAIL_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:19.331" level="INFO">Typing text 'fabiano.bissoli@email.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:19.331" endtime="20210324 20:23:19.517"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.135" endtime="20210324 20:23:19.517"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.134" endtime="20210324 20:23:19.517"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.133" endtime="20210324 20:23:19.517"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.132" endtime="20210324 20:23:19.517"></status>
+</kw>
+<kw name="E clico no botão Cadastrar com o campo Senha incompleto" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar com o campo Senha incompleto" library="CadastrarUsuarioSenhaIncompleta">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:19.521" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:19.521" endtime="20210324 20:23:19.616"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.520" endtime="20210324 20:23:19.617"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.519" endtime="20210324 20:23:19.617"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.519" endtime="20210324 20:23:19.617"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.518" endtime="20210324 20:23:19.617"></status>
+</kw>
+<kw name="Então exibi a mensagem de erro &quot;A senha deve conter ao menos 8 caracteres.&quot;, logo abaixo do campo Senha e não ter cadastrado o usuário" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Exibi a mensagem de erro &quot;A senha deve conter ao menos 8 caracteres.&quot;, logo abaixo do campo Senha e não ter cadastrado o usuário" library="CadastrarUsuarioSenhaIncompleta">
+<kw name="Mensagem de senha incompleto abaixo do campo Senha" library="Resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${INCOMPLETO_SENHA}</arg>
+<arg>@{TEXT_INCOMPLETO_SENHA}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:19.621" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/form/div[3]/p' contains exact text 'A senha deve conter ao menos 8 caracteres.'.</msg>
+<status status="PASS" starttime="20210324 20:23:19.621" endtime="20210324 20:23:19.666"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_08_Mensagem_de_Senha_Inválida_08.png</arg>
+</arguments>
+<msg timestamp="20210324 20:23:20.155" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_08_Mensagem_de_Senha_Inv%C3%A1lida_08.png"&gt;&lt;img src="CT_08_Mensagem_de_Senha_Inv%C3%A1lida_08.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:23:19.667" endtime="20210324 20:23:20.155"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.620" endtime="20210324 20:23:20.156"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.620" endtime="20210324 20:23:20.156"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.619" endtime="20210324 20:23:20.156"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:19.618" endtime="20210324 20:23:20.156"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210324 20:23:20.159" endtime="20210324 20:23:23.738"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:20.158" endtime="20210324 20:23:23.738"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:12.299" endtime="20210324 20:23:23.740" critical="yes"></status>
+</test>
+<test id="s1-t9" name="Cenário 09: Cadastrar usuário com todos campos Nome, E-mail e Senha preenchidos">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:23.745" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210324 20:23:23.744" endtime="20210324 20:23:25.286"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210324 20:23:25.286" endtime="20210324 20:23:25.406"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:23.744" endtime="20210324 20:23:25.407"></status>
+</kw>
+<kw name="Dado que cadastrarei um usuário com os campos Nome, E-mail e Senha preenchidos" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Que cadastrarei um usuário com os campos Nome, E-mail e Senha preenchidos" library="CadastrarUsuarioComTodosCamposPreenchidos">
+<kw name="Acessar tela de Cadastros de usuários" library="Resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:28.412" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:23:25.412" endtime="20210324 20:23:28.412"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:28.413" level="INFO">Opening url 'http://prova.stefanini-jgr.com.br/teste/qa/'</msg>
+<status status="PASS" starttime="20210324 20:23:28.412" endtime="20210324 20:23:29.697"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_01_Tela_Cadastro_de_usuários_01.png</arg>
+</arguments>
+<msg timestamp="20210324 20:23:30.216" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png"&gt;&lt;img src="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:23:29.697" endtime="20210324 20:23:30.216"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:25.410" endtime="20210324 20:23:30.216"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:25.410" endtime="20210324 20:23:30.216"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:25.409" endtime="20210324 20:23:30.216"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:25.408" endtime="20210324 20:23:30.217"></status>
+</kw>
+<kw name="Quando preencho os campos Nome, E-mail e Senha completamente" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho os campos Nome, E-mail e Senha completamente" library="CadastrarUsuarioComTodosCamposPreenchidos">
+<kw name="Preencher os campos Nome, E-mail e Senha" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+<arg>@{USER_UM_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:30.221" level="INFO">Typing text 'Fabiano Bernardo Bissoli' into text field 'xpath=//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:30.220" endtime="20210324 20:23:30.442"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+<arg>@{E-MAIL_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:30.443" level="INFO">Typing text 'fabiano.bissoli@email.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:30.442" endtime="20210324 20:23:30.643"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+<arg>@{SENHA_COMPLETA}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:30.644" level="INFO">Typing text '12345678' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:30.643" endtime="20210324 20:23:30.791"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.219" endtime="20210324 20:23:30.792"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.219" endtime="20210324 20:23:30.792"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.218" endtime="20210324 20:23:30.792"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.217" endtime="20210324 20:23:30.792"></status>
+</kw>
+<kw name="E clico no botão Cadastrar com os campos Nome, E-mail e Senha preenchidos" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar com os campos Nome, E-mail e Senha preenchidos" library="CadastrarUsuarioComTodosCamposPreenchidos">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:30.796" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:30.796" endtime="20210324 20:23:30.891"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.795" endtime="20210324 20:23:30.892"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.795" endtime="20210324 20:23:30.892"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.794" endtime="20210324 20:23:30.892"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.793" endtime="20210324 20:23:30.892"></status>
+</kw>
+<kw name="Então exibi a tabela Usuários cadastrados com o usuário cadastrado" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Exibi a tabela Usuários cadastrados com o usuário cadastrado" library="CadastrarUsuarioComTodosCamposPreenchidos">
+<kw name="Tabela Usuários cadastrados com o usuário cadastrado" library="Resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${TAB_USU_CADASTRADO}</arg>
+<arg>@{TEXT_USUARIO_USU}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:30.898" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/h2[2]' contains exact text 'Usuários cadastrados'.</msg>
+<status status="PASS" starttime="20210324 20:23:30.898" endtime="20210324 20:23:30.945"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${PRIMEIRO_USUARIO}</arg>
+<arg>@{USER_UM_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:30.946" level="INFO">Verifying element 'xpath=//*[@id="tdUserName1"]' contains exact text 'Fabiano Bernardo Bissoli'.</msg>
+<status status="PASS" starttime="20210324 20:23:30.945" endtime="20210324 20:23:30.985"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${PRIMEIRO_USUARIO}</arg>
+</arguments>
+<status status="PASS" starttime="20210324 20:23:30.986" endtime="20210324 20:23:31.266"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_09_Cadastro_de_usuário_09.png</arg>
+</arguments>
+<msg timestamp="20210324 20:23:31.657" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_09_Cadastro_de_usu%C3%A1rio_09.png"&gt;&lt;img src="CT_09_Cadastro_de_usu%C3%A1rio_09.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:23:31.267" endtime="20210324 20:23:31.657"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:34.659" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:23:31.658" endtime="20210324 20:23:34.659"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.896" endtime="20210324 20:23:34.659"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.895" endtime="20210324 20:23:34.659"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.894" endtime="20210324 20:23:34.659"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:30.893" endtime="20210324 20:23:34.660"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210324 20:23:34.662" endtime="20210324 20:23:37.121"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:34.661" endtime="20210324 20:23:37.122"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:23.742" endtime="20210324 20:23:37.124" critical="yes"></status>
+</test>
+<test id="s1-t10" name="Cenário 10: Cadastrar mais um usuário com os campos preenchidos">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:37.128" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210324 20:23:37.128" endtime="20210324 20:23:38.596"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210324 20:23:38.597" endtime="20210324 20:23:38.718"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:37.127" endtime="20210324 20:23:38.719"></status>
+</kw>
+<kw name="Dado que cadastrarei mais de um usuário com os campos Nome, E-mail e Senha preenchidos" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Que cadastrarei mais de um usuário com os campos Nome, E-mail e Senha preenchidos" library="CadastrarOutroUsuarioComTodosCamposPreenchidos">
+<kw name="Acessar tela de Cadastros de usuários" library="Resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:41.723" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:23:38.722" endtime="20210324 20:23:41.723"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:41.724" level="INFO">Opening url 'http://prova.stefanini-jgr.com.br/teste/qa/'</msg>
+<status status="PASS" starttime="20210324 20:23:41.723" endtime="20210324 20:23:42.962"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_01_Tela_Cadastro_de_usuários_01.png</arg>
+</arguments>
+<msg timestamp="20210324 20:23:43.440" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png"&gt;&lt;img src="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:23:42.963" endtime="20210324 20:23:43.440"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:38.722" endtime="20210324 20:23:43.440"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:38.721" endtime="20210324 20:23:43.440"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:38.721" endtime="20210324 20:23:43.440"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:38.720" endtime="20210324 20:23:43.440"></status>
+</kw>
+<kw name="Quando preencho todos os campos Nome, E-mail e Senha completamente" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho todos os campos Nome, E-mail e Senha completamente" library="CadastrarOutroUsuarioComTodosCamposPreenchidos">
+<kw name="Preencher os campos Nome, E-mail e Senha" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+<arg>@{USER_UM_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:43.444" level="INFO">Typing text 'Fabiano Bernardo Bissoli' into text field 'xpath=//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:43.444" endtime="20210324 20:23:43.636"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+<arg>@{E-MAIL_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:43.637" level="INFO">Typing text 'fabiano.bissoli@email.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:43.636" endtime="20210324 20:23:43.809"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+<arg>@{SENHA_COMPLETA}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:43.809" level="INFO">Typing text '12345678' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:43.809" endtime="20210324 20:23:43.938"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:43.443" endtime="20210324 20:23:43.938"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:43.443" endtime="20210324 20:23:43.938"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:43.442" endtime="20210324 20:23:43.939"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:43.441" endtime="20210324 20:23:43.939"></status>
+</kw>
+<kw name="E clico no botão Cadastrar com todos campos Nome, E-mail e Senha preenchidos" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar com todos campos Nome, E-mail e Senha preenchidos" library="CadastrarOutroUsuarioComTodosCamposPreenchidos">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:43.943" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:43.943" endtime="20210324 20:23:44.027"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:43.942" endtime="20210324 20:23:44.027"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:43.941" endtime="20210324 20:23:44.028"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:43.940" endtime="20210324 20:23:44.028"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:43.940" endtime="20210324 20:23:44.028"></status>
+</kw>
+<kw name="E preencho novamente os campos Nome, E-mail e Senha completamente com outro usuário" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Preencho novamente os campos Nome, E-mail e Senha completamente com outro usuário" library="CadastrarOutroUsuarioComTodosCamposPreenchidos">
+<kw name="Preencher todos os campos Nome, E-mail e Senha para cadastrar outro usuário" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+<arg>@{USER_DOIS_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:44.034" level="INFO">Typing text 'Jeseus de Nazaré' into text field 'xpath=//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:44.033" endtime="20210324 20:23:44.155"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+<arg>@{E-MAIL_COMPLETO_DOIS}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:44.156" level="INFO">Typing text 'teste.automatico@email.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:44.155" endtime="20210324 20:23:44.303"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+<arg>@{SENHA_COMPLETA}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:44.304" level="INFO">Typing text '12345678' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:44.303" endtime="20210324 20:23:44.403"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.032" endtime="20210324 20:23:44.403"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.031" endtime="20210324 20:23:44.403"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.030" endtime="20210324 20:23:44.403"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.029" endtime="20210324 20:23:44.404"></status>
+</kw>
+<kw name="E clico no botão Cadastrar com todos campos Nome, E-mail e Senha preenchidos para cadastrar outro usuário" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar com todos campos Nome, E-mail e Senha preenchidos para cadastrar outro usuário" library="CadastrarOutroUsuarioComTodosCamposPreenchidos">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:44.408" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:44.407" endtime="20210324 20:23:44.464"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.407" endtime="20210324 20:23:44.465"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.406" endtime="20210324 20:23:44.465"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.406" endtime="20210324 20:23:44.465"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.405" endtime="20210324 20:23:44.465"></status>
+</kw>
+<kw name="Então exibi a tabela Usuários cadastrados com os dois usuários cadastrados" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Exibi a tabela Usuários cadastrados com os dois usuários cadastrados" library="CadastrarOutroUsuarioComTodosCamposPreenchidos">
+<kw name="Tabela Usuários cadastrados com mais de um usuário cadastrado" library="Resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${TAB_USU_CADASTRADO}</arg>
+<arg>@{TEXT_USUARIO_USU}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:44.469" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/h2[2]' contains exact text 'Usuários cadastrados'.</msg>
+<status status="PASS" starttime="20210324 20:23:44.469" endtime="20210324 20:23:44.510"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${PRIMEIRO_USUARIO}</arg>
+<arg>@{USER_UM_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:44.511" level="INFO">Verifying element 'xpath=//*[@id="tdUserName1"]' contains exact text 'Fabiano Bernardo Bissoli'.</msg>
+<status status="PASS" starttime="20210324 20:23:44.511" endtime="20210324 20:23:44.544"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${SEGUNDO_USUARIO}</arg>
+<arg>@{USER_DOIS_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:44.545" level="INFO">Verifying element 'xpath=//*[@id="tdUserName2"]' contains exact text 'Jeseus de Nazaré'.</msg>
+<status status="PASS" starttime="20210324 20:23:44.544" endtime="20210324 20:23:44.577"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${SEGUNDO_USUARIO}</arg>
+</arguments>
+<status status="PASS" starttime="20210324 20:23:44.577" endtime="20210324 20:23:44.863"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_10_Cadastro_de_outro_usuário_10.png</arg>
+</arguments>
+<msg timestamp="20210324 20:23:45.230" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_10_Cadastro_de_outro_usu%C3%A1rio_10.png"&gt;&lt;img src="CT_10_Cadastro_de_outro_usu%C3%A1rio_10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:23:44.864" endtime="20210324 20:23:45.230"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:48.233" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:23:45.230" endtime="20210324 20:23:48.233"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.468" endtime="20210324 20:23:48.233"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.468" endtime="20210324 20:23:48.233"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.467" endtime="20210324 20:23:48.234"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:44.466" endtime="20210324 20:23:48.234"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210324 20:23:48.236" endtime="20210324 20:23:50.682"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:48.235" endtime="20210324 20:23:50.683"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:37.126" endtime="20210324 20:23:50.683" critical="yes"></status>
+</test>
+<test id="s1-t11" name="Cenário 11: Excluir um usuário cadastrado">
+<kw name="Abrir navegador" library="Resource" type="setup">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:50.688" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20210324 20:23:50.687" endtime="20210324 20:23:52.114"></status>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210324 20:23:52.114" endtime="20210324 20:23:52.243"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:50.686" endtime="20210324 20:23:52.243"></status>
+</kw>
+<kw name="Dado que cadastrarei dois usuários" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Que cadastrarei dois usuários" library="ExcluirUsuarioCadastrado">
+<kw name="Acessar tela de Cadastros de usuários" library="Resource">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:55.248" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:23:52.246" endtime="20210324 20:23:55.248"></status>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<arguments>
+<arg>${HOME_URL}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:55.249" level="INFO">Opening url 'http://prova.stefanini-jgr.com.br/teste/qa/'</msg>
+<status status="PASS" starttime="20210324 20:23:55.248" endtime="20210324 20:23:56.509"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_01_Tela_Cadastro_de_usuários_01.png</arg>
+</arguments>
+<msg timestamp="20210324 20:23:56.979" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png"&gt;&lt;img src="CT_01_Tela_Cadastro_de_usu%C3%A1rios_01.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:23:56.509" endtime="20210324 20:23:56.979"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:52.246" endtime="20210324 20:23:56.979"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:52.245" endtime="20210324 20:23:56.980"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:52.245" endtime="20210324 20:23:56.980"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:52.244" endtime="20210324 20:23:56.980"></status>
+</kw>
+<kw name="Quando cadastro o primeiro usuário" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Cadastro o primeiro usuário" library="ExcluirUsuarioCadastrado">
+<kw name="Preencher os campos Nome, E-mail e Senha" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+<arg>@{USER_UM_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:56.983" level="INFO">Typing text 'Fabiano Bernardo Bissoli' into text field 'xpath=//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:56.983" endtime="20210324 20:23:57.177"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+<arg>@{E-MAIL_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:57.178" level="INFO">Typing text 'fabiano.bissoli@email.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:57.177" endtime="20210324 20:23:57.350"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+<arg>@{SENHA_COMPLETA}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:57.351" level="INFO">Typing text '12345678' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:57.351" endtime="20210324 20:23:57.482"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:56.982" endtime="20210324 20:23:57.483"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:56.982" endtime="20210324 20:23:57.483"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:56.981" endtime="20210324 20:23:57.483"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:56.981" endtime="20210324 20:23:57.483"></status>
+</kw>
+<kw name="E clico no botão Cadastrar para realizar o primeiro cadastro" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar para realizar o primeiro cadastro" library="ExcluirUsuarioCadastrado">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:57.487" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:57.487" endtime="20210324 20:23:57.575"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.486" endtime="20210324 20:23:57.576"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.485" endtime="20210324 20:23:57.576"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.485" endtime="20210324 20:23:57.576"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.484" endtime="20210324 20:23:57.577"></status>
+</kw>
+<kw name="E cadastro o segundo usuário" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Cadastro o segundo usuário" library="ExcluirUsuarioCadastrado">
+<kw name="Preencher todos os campos Nome, E-mail e Senha para cadastrar outro usuário" library="Resource">
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_NOME}</arg>
+<arg>@{USER_DOIS_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:57.582" level="INFO">Typing text 'Jeseus de Nazaré' into text field 'xpath=//*[@id="name"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:57.582" endtime="20210324 20:23:57.702"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_E-MAIL}</arg>
+<arg>@{E-MAIL_COMPLETO_DOIS}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:57.704" level="INFO">Typing text 'teste.automatico@email.com' into text field 'xpath=//*[@id="email"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:57.703" endtime="20210324 20:23:57.833"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>${CAMPO_SENHA}</arg>
+<arg>@{SENHA_COMPLETA}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:57.834" level="INFO">Typing text '12345678' into text field 'xpath=//*[@id="password"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:57.833" endtime="20210324 20:23:57.932"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.581" endtime="20210324 20:23:57.932"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.579" endtime="20210324 20:23:57.932"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.579" endtime="20210324 20:23:57.933"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.578" endtime="20210324 20:23:57.933"></status>
+</kw>
+<kw name="E clico no botão Cadastrar para realizar o segundo cadastro" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico no botão Cadastrar para realizar o segundo cadastro" library="ExcluirUsuarioCadastrado">
+<kw name="Clicar no botão Cadastrar" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${BTN_CADASTRAR}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:57.936" level="INFO">Clicking element 'xpath=//*[@id="register"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:57.936" endtime="20210324 20:23:57.995"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.935" endtime="20210324 20:23:57.995"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.935" endtime="20210324 20:23:57.995"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.934" endtime="20210324 20:23:57.995"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.934" endtime="20210324 20:23:57.996"></status>
+</kw>
+<kw name="E clico na opção Excluir em um usuário cadastrado" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="Clico na opção Excluir em um usuário cadastrado" library="ExcluirUsuarioCadastrado">
+<kw name="Excluir um usuário cadastrado" library="Resource">
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>${OPC_EXCLUIR}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:58.000" level="INFO">Clicking element 'xpath=//*[@id="removeUser2"]'.</msg>
+<status status="PASS" starttime="20210324 20:23:57.999" endtime="20210324 20:23:58.074"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.999" endtime="20210324 20:23:58.075"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.998" endtime="20210324 20:23:58.075"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.998" endtime="20210324 20:23:58.075"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:57.997" endtime="20210324 20:23:58.076"></status>
+</kw>
+<kw name="Então a tabela Usuários cadastrados deixa de exibir o usuário excluído" library="BDDpt-br">
+<kw name="Run Keyword" library="BuiltIn">
+<doc>Executes the given keyword with the given arguments.</doc>
+<arguments>
+<arg>${Keyword}</arg>
+</arguments>
+<kw name="A tabela Usuários cadastrados deixa de exibir o usuário excluído" library="ExcluirUsuarioCadastrado">
+<kw name="Tabela Usuários cadastrados com um usuário cadastrado excluído" library="Resource">
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${TAB_USU_CADASTRADO}</arg>
+<arg>@{TEXT_USUARIO_USU}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:58.080" level="INFO">Verifying element 'xpath=//*[@id="root"]/div/div/div[2]/h2[2]' contains exact text 'Usuários cadastrados'.</msg>
+<status status="PASS" starttime="20210324 20:23:58.079" endtime="20210324 20:23:58.118"></status>
+</kw>
+<kw name="Element Text Should Be" library="SeleniumLibrary">
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<arguments>
+<arg>${PRIMEIRO_USUARIO}</arg>
+<arg>@{USER_UM_NOME_COMPLETO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:58.119" level="INFO">Verifying element 'xpath=//*[@id="tdUserName1"]' contains exact text 'Fabiano Bernardo Bissoli'.</msg>
+<status status="PASS" starttime="20210324 20:23:58.119" endtime="20210324 20:23:58.150"></status>
+</kw>
+<kw name="Element Should Not Be Visible" library="SeleniumLibrary">
+<doc>Verifies that the element identified by ``locator`` is NOT visible.</doc>
+<arguments>
+<arg>${SEGUNDO_USUARIO}</arg>
+</arguments>
+<msg timestamp="20210324 20:23:58.165" level="INFO">Element 'xpath=//*[@id="tdUserName2"]' did not exist.</msg>
+<status status="PASS" starttime="20210324 20:23:58.150" endtime="20210324 20:23:58.165"></status>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<arguments>
+<arg>${PRIMEIRO_USUARIO}</arg>
+</arguments>
+<status status="PASS" starttime="20210324 20:23:58.165" endtime="20210324 20:23:58.437"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<arguments>
+<arg>CT_11_Exclusão_de_um_usuário_11.png</arg>
+</arguments>
+<msg timestamp="20210324 20:23:58.814" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="CT_11_Exclus%C3%A3o_de_um_usu%C3%A1rio_11.png"&gt;&lt;img src="CT_11_Exclus%C3%A3o_de_um_usu%C3%A1rio_11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210324 20:23:58.437" endtime="20210324 20:23:58.814"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${TEMPO}</arg>
+</arguments>
+<msg timestamp="20210324 20:24:01.815" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210324 20:23:58.815" endtime="20210324 20:24:01.815"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:58.078" endtime="20210324 20:24:01.815"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:58.078" endtime="20210324 20:24:01.816"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:58.077" endtime="20210324 20:24:01.816"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:58.076" endtime="20210324 20:24:01.816"></status>
+</kw>
+<kw name="Fechar navegador" library="Resource" type="teardown">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210324 20:24:01.818" endtime="20210324 20:24:04.246"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:24:01.817" endtime="20210324 20:24:04.246"></status>
+</kw>
+<status status="PASS" starttime="20210324 20:23:50.685" endtime="20210324 20:24:04.247" critical="yes"></status>
+</test>
+<doc>Web system Cadastro de usuários
+Suite de teste do sistema Cadastro de usuários
+Verficação da funcionalidade de cadastramento de usuários</doc>
+<status status="PASS" starttime="20210324 20:22:00.728" endtime="20210324 20:24:04.251"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="11" fail="0">Critical Tests</stat>
+<stat pass="11" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="11" fail="0" id="s1" name="CasosDeTesteCadastroDeUsuariosBDD">CasosDeTesteCadastroDeUsuariosBDD</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
